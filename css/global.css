@@ -7,97 +7,13 @@
 }
 
 
-/* FONTS */
-@font-face {
-  font-family: 'Inter 28pt';
-  src: url('../fonts/Inter28pt-BoldItalic.woff2') format('woff2'),
-      url('../fonts/Inter28pt-BoldItalic.woff') format('woff');
-  font-weight: bold;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Inter 28pt';
-  src: url('../fonts/Inter28pt-Bold.woff2') format('woff2'),
-      url('../fonts/Inter28pt-Bold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
-      url('../fonts/Roboto-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Inconsolata';
-  src: url('../fonts/Inconsolata-Regular.woff2') format('woff2'),
-      url('../fonts/Inconsolata-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Lora';
-  src: url('../fonts/Lora-Bold.woff2') format('woff2'),
-      url('../fonts/Lora-Bold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Lora';
-  src: url('../fonts/Lora-Regular.woff2') format('woff2'),
-      url('../fonts/Lora-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Lora';
-  src: url('../fonts/Lora-Italic.woff2') format('woff2'),
-      url('../fonts/Lora-Italic.woff') format('woff');
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Inter 28pt';
-  src: url('../fonts/Inter28pt-Regular.woff2') format('woff2'),
-      url('../fonts/Inter28pt-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Inconsolata';
-  src: url('../fonts/Inconsolata-Bold.woff2') format('woff2'),
-      url('../fonts/Inconsolata-Bold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-
-
-
 /* GLOBAL */
 
 html {
   height: 100%;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-size: 16px;
 }
 
 *,
@@ -110,9 +26,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  font-family: "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  font-family: "Arial", sans-serif;line-height: 1.5;
 }
 
 img {
