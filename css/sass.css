@@ -86,3 +86,10 @@ body.dark {
   width: 2rem;
   height: 2.25rem;
 }
+.container {
+  width: 100%;
+  max-width: 48.5rem;
+  padding: 0 1.25rem;
+  margin-left: auto;
+  margin-right: auto;
+}
