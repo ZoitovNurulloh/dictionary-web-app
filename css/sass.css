@@ -61,3 +61,14 @@
   font-style: normal;
   font-display: swap;
 }
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Inter 28pt", "Arial", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  color: #2d2d2d;
+}
+
