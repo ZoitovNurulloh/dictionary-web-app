@@ -76,3 +76,13 @@ body.dark {
   color: #ffffff;
   background-color: #050505;
 }
+
+.logo {
+  display: block;
+}
+
+.logo__img {
+  display: block;
+  width: 2rem;
+  height: 2.25rem;
+}
