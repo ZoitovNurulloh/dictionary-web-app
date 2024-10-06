@@ -9,6 +9,36 @@
 </head>
 <body>
 
-  <h1>hello world</h1>
+
+  <header class="header">
+    <div class="header__container container">
+      <a href="#" class="header__logo logo">
+        <img src="./images/logo.svg" alt="" class="logo__img" width="32" height="36">
+      </a>
+
+      <div class="header__wrapper">
+        <div class="header__dropdown dropdown">
+          <div class="dropdown__inner dropdown__inner--js">
+            <span class="dropdown__button dropdown__button--js">Sans Serif</span>
+            <svg class="dropdown__img" xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8"><path fill="none" stroke="#A445ED" stroke-width="1.5" d="m1 1 6 6 6-6"/></svg>
+          </div>
+          <ul class="dropdown__menu">
+            <li class="dropdown__item dropdown__item--js">Sans Serif</li>
+            <li class="dropdown__item dropdown__item--js">Serif</li>
+            <li class="dropdown__item dropdown__item--js">Mono</li>
+          </ul>
+        </div>
+
+        <div class="header__toggle">
+            <input class="header__input" type="checkbox" id="check" name="check">
+            <label class="header__button" for="check"></label>
+            <svg class="header__img" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M1 10.449a10.544 10.544 0 0 0 19.993 4.686C11.544 15.135 6.858 10.448 6.858 1A10.545 10.545 0 0 0 1 10.449Z"/></svg>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <script src="./js/index.js"></script>
 </body>
 </html>
