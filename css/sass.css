@@ -76,6 +76,14 @@
   --bg-body-color:#ffffff;
 }
 
+.dark {
+  --bg-body-color:#050505;
+  --text-color:#ffffff;
+  --border-color: var(--purple);
+  --dropdown-bg-color: var(--purple);
+  --form-bg-color:#1f1f1f;
+}
+
 html {
   font-size: 16px;
 }
