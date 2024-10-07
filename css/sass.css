@@ -298,7 +298,7 @@ body {
     margin-bottom: 2.5rem;
   }
 }
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 425px) {
   .logo__img {
     width: 1.75rem;
     height: 1.75rem;
