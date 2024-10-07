@@ -1,6 +1,6 @@
 const dropdownBtn = document.querySelector(".dropdown__inner--js");
 const dropdownMenu = document.querySelector(".dropdown__menu");
-const dropdownItem = document.querySelectorAll(".dropdown__item--js")
+const dropdownItem = document.querySelectorAll(".dropdown__item--js");
 const dropdownText = document.querySelector(".dropdown__button--js");
 const btnTogglerTheme = document.querySelector(".header__button");
 
