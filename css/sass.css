@@ -293,6 +293,34 @@ body {
   font-size: 1.25rem;
 }
 
+.not-found {
+  display: none;
+  padding-top: 5.5rem;
+}
+.not-found__db {
+  display: block;
+}
+.not-found__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.not-found__smile {
+  font-family: var(--roboto-normal);
+  font-size: 4rem;
+  line-height: 4.75rem;
+  margin-bottom: 2.75rem;
+}
+.not-found__heading {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.not-found__description {
+  color: var(--gray-color);
+}
+
 @media only screen and (max-width: 769px) {
   .form {
     margin-bottom: 2.5rem;
@@ -331,6 +359,10 @@ body {
     font-size: 1rem;
     line-height: 1.25rem;
     top: 3.5rem;
+  }
+  .not-found__smile {
+    font-size: 2rem;
+    line-height: 2.25rem;
   }
 }
 
