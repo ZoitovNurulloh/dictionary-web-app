@@ -457,10 +457,105 @@ body {
 .response__noun-verb-description {
   color: var(--gray-color);
 }
+.response__source-wrapper {
+  display: flex;
+  align-items: center;
+  padding-top: 1.5rem;
+  padding-bottom: 4rem;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+}
+.response__source {
+  color: var(--gray-color);
+  text-decoration: underline;
+  margin-right: 1.5rem;
+}
+.response__source-link {
+  text-decoration: underline;
+  color: var(--black);
+}
+.response__source-link:hover {
+  color: var(--purple);
+}
 
 @media only screen and (max-width: 769px) {
   .form {
     margin-bottom: 2.5rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .response__play-inner {
+    margin-bottom: 1.875rem;
+  }
+  .response__info-heading {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  .response__info-description {
+    font-size: 1.125em;
+    line-height: 1.5rem;
+  }
+  .response__play {
+    width: 3rem;
+    height: 3rem;
+  }
+  .response__play-img {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+  .response__noun-wrapper {
+    margin-bottom: 2rem;
+  }
+  .response__noun-info {
+    margin-bottom: 2rem;
+  }
+  .response__noun-heading {
+    font-size: 1.125rem;
+    line-height: 1.35rem;
+  }
+  .response__noun-list {
+    margin-bottom: 1.5rem;
+  }
+  .response__noun-list-heading {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  .response__noun-list-item {
+    font-size: 1rem;
+  }
+  .response__noun-synonyms-info {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+  .response__verb-wrapper {
+    padding-bottom: 2rem;
+  }
+  .response__verb-info {
+    margin-bottom: 2rem;
+  }
+  .response__verb-heading {
+    font-size: 1.125rem;
+    line-height: 1.35rem;
+  }
+  .response__verb-list-heading {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  .response__noun-verb-item {
+    font-size: 1rem;
+  }
+  .response__noun-verb-description {
+    font-size: 1rem;
+  }
+  .response__source-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .response__source {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
   }
 }
 @media only screen and (max-width: 425px) {
@@ -500,6 +595,22 @@ body {
   .not-found__smile {
     font-size: 2rem;
     line-height: 2.25rem;
+  }
+}
+@media only screen and (max-width: 291px) {
+  .header__container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .logo__img {
+    margin-bottom: 1rem;
+  }
+  .response__noun-synonyms-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .response__noun-synonyms-title {
+    margin-bottom: 0.5rem;
   }
 }
 
