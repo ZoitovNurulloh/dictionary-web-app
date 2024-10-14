@@ -16,13 +16,6 @@ const notFound = document.querySelector(".not-found")
 const response = document.querySelector(".response")
 const getData = async (resurse) => {
   const request = await fetch(resurse);
-  if (request.status != 200) {
-    notFound.classList.add("not-found__db")
-    response.classList.remove("response--db");
-  }else {
-    notFound.classList.remove("not-found__db");
-    response.classList.add("response--db");
-  }
 
   const data = await request.json();
   return data;
@@ -39,6 +32,8 @@ form.addEventListener("submit", (e) => {
   responseVerbList.innerHTML = '';
   responseListHeading.textContent = ''
   getData(`https://api.dictionaryapi.dev/api/v2/entries/en/${input.value}`).then((data) => {
+      notFound.classList.remove("not-found__db");
+      response.classList.add("response--db");
     const [{license,meanings,phonetics,sourceUrls,word,phonetic}] = data;
 
     responseHeading.textContent = word;
@@ -68,5 +63,8 @@ form.addEventListener("submit", (e) => {
         }
       })
     })
+  }).catch((err) => {
+      notFound.classList.add("not-found__db")
+      response.classList.remove("response--db");
   })
 })
