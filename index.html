@@ -23,16 +23,16 @@
             <svg class="dropdown__img" xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8"><path fill="none" stroke="#A445ED" stroke-width="1.5" d="m1 1 6 6 6-6"/></svg>
           </div>
           <ul class="dropdown__menu">
-            <li class="dropdown__item dropdown__item--js">Sans Serif</li>
-            <li class="dropdown__item dropdown__item--js">Serif</li>
-            <li class="dropdown__item dropdown__item--js">Mono</li>
+            <li data-font="var(--inter-normal)" class="dropdown__item dropdown__item--js">Sans Serif</li>
+            <li data-font="var(--lora-normal)" class="dropdown__item dropdown__item--js">Serif</li>
+            <li data-font="var(--inconsolate-normal)" class="dropdown__item dropdown__item--js">Mono</li>
           </ul>
         </div>
 
         <div class="header__toggle">
-            <input class="header__input" type="checkbox" id="check" name="check">
-            <label class="header__button" for="check"></label>
-            <svg class="header__img" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M1 10.449a10.544 10.544 0 0 0 19.993 4.686C11.544 15.135 6.858 10.448 6.858 1A10.545 10.545 0 0 0 1 10.449Z"/></svg>
+          <input class="header__input" type="checkbox" id="check" name="check">
+          <label class="header__button" for="check"></label>
+          <svg class="header__img" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M1 10.449a10.544 10.544 0 0 0 19.993 4.686C11.544 15.135 6.858 10.448 6.858 1A10.545 10.545 0 0 0 1 10.449Z"/></svg>
         </div>
       </div>
     </div>
@@ -41,7 +41,7 @@
   <form class="form" id="form">
     <div class="form__container container">
       <label class="form__group" for="form__search">
-        <input class="form__input" type="search" name="search" id="form__search" placeholder="Search for any word…">
+        <input class="form__input" name="search" id="form__search" placeholder="Search for any word…">
         <img class="form__img" src="./images/icon-search.svg" alt="Icon search" width="13" height="13">
       </label>
 
@@ -62,14 +62,14 @@
       <div class="response__container container">
         <div class="response__play-inner">
           <div class="response__info-wrapper">
-            <h2 class="response__info-heading">keyboard</h2>
-            <p class="response__info-description">/ˈkiːbɔːd/</p>
+            <h2 id="response__heading" class="response__info-heading"></h2>
+            <p id="response__phonatic" class="response__info-description"></p>
           </div>
 
           <button class="response__play">
             <svg class="response__play-img" width="21.000000" height="21.000000" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <desc>
-                  Created with Pixso.
+                Created with Pixso.
               </desc>
               <defs/>
               <path id="Path 2" d="M0 0L0 21L21 10.5L0 0Z" fill="#A445ED" fill-opacity="1.000000" fill-rule="evenodd"/>
@@ -79,51 +79,47 @@
           </button>
         </div>
 
-        <div class="response__noun-wrapper">
-          <div class="response__noun-info">
-            <h3 class="response__noun-heading">noun</h3>
-            <span class="response__noun-br"></span>
+        <div class="response__wrapper">
+          <div class="response__phrase-info">
+            <h4 id="response__phrase-noun" class="response__phrase-heading"></h4>
+            <span class="response__phrase-br"></span>
           </div>
 
-          <ul class="response__noun-list">
-            <h5 class="response__noun-list-heading">Meaning</h5>
-            <li class="response__noun-list-item">(etc.) A set of keys used to operate a typewriter, computer etc.</li>
+          <div class="response__list-heading-wrapper">
+            <h4 class="response__list-heading"></h4>
+            <ul class="response__list response__noun-list">
+            </ul>
+          </div>
 
-            <li class="response__noun-list-item">A component of many instruments including the piano, organ, and harpsichord consisting of usually black and white keys that cause different tones to be produced when struck.</li>
-
-            <li class="response__noun-list-item">A device with keys of a musical keyboard, used to control electronic sound-producing devices which may be built into or separate from the keyboard device.</li>
-          </ul>
-
-          <div class="response__noun-synonyms-info">
-            <span class="response__noun-synonyms-title">Synonyms</span>
-            <a href="#" class="response__noun-synonyms-link">electronic keyboard</a>
+          <div class="response__synonymus-inner">
+            <span class="response__synonymus">Synonyms</span>
+            <span id="response__synonymus-text" class="response__synonymus-text"></span>
           </div>
         </div>
 
-        <div class="response__verb-wrapper">
-          <div class="response__verb-info">
-            <h3 class="response__verb-heading">verb</h3>
-            <span class="response__verb-br"></span>
+        <div class="response__wrapper">
+          <div class="response__phrase-info">
+            <h4 id="response__phrase-verb" class="response__phrase-heading"></h4>
+            <span class="response__phrase-br"></span>
           </div>
 
-          <ul class="response__verb-list">
-            <h5 class="response__verb-list-heading">Meaning</h5>
-            <div class="response__verb-list-inner">
-              <li class="response__noun-verb-item">To type on a computer keyboard.</li>
-              <p class="response__noun-verb-description">“Keyboarding is the part of this job I hate the most.”</p>
-            </div>
-          </ul>
-
+          <div class="response__list-heading-wrapper">
+            <h4 class="response__list-heading"></h4>
+            <ul class="response__list response__verb-list">
+            </ul>
+          </div>
         </div>
+
 
         <div class="response__source-wrapper">
           <span class="response__source">Source</span>
-          <a class="response__source-link" href="#">https://en.wiktionary.org/wiki/keyboard</a>
+          <a id="response-source-link" class="response__source-link" href="#" target="_blank"></a>
         </div>
 
       </div>
     </section>
   </main>
+  <script src="./js/mode.js"></script>
   <script src="./js/index.js"></script>
 </body>
 </html>
